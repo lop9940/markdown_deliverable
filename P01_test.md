@@ -4,7 +4,7 @@
     - [1.2.1. 入力青果物](#121-入力青果物)
     - [1.2.2. 出力青果物](#122-出力青果物)
     - [1.2.3. 更新青果物](#123-更新青果物)
-  - [PFD](#pfd)
+  - [1.3. PFD](#13-pfd)
 
 # 1. P01 test
 
@@ -27,7 +27,7 @@
 
 - D04_dTest4
 
-## PFD
+## 1.3. PFD
 
 ```mermaid
 flowchart TD
@@ -37,6 +37,7 @@ flowchart TD
     P04([pTest4])
 
     D01[/dTest1/]
+    click D01 "./D01_dTest1.md" "Open this in a new tab" _blank
     D02[/dTest2/]
     D03[/dTest3/]
     D04[/dTest4/]
