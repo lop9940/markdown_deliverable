@@ -45,6 +45,7 @@ flowchart TD
     D02[/dTest2/]
     click D02 "D01_dTest1.md" "Open this in a new tab" _blank
     D03[/dTest3/]
+    click D03 "https://www.github.com" "This is a tooltip for a link"
     D04[/dTest4/]
     D05[/dTest5/]
     D06[/dTest6/]
