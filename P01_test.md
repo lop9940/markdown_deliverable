@@ -41,7 +41,7 @@ flowchart TD
     P04([pTest4])
 
     D01[/dTest1/]
-    click D01 "D01_dTest1.md"
+    click D01 href "D01_dTest1.md"
     D02[/dTest2/]
     click D02 "https://github.com/lop9940/markdown_deliverable/blob/add-link/D01_dTest1.md"
     D03[/dTest3/]
