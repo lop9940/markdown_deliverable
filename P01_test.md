@@ -41,9 +41,9 @@ flowchart TD
     P04([pTest4])
 
     D01[/dTest1/]
-    click D01 "D01_dTest1.md" "This is a tooltip for a link"
+    click D01 "https://www.github.com" "This is a link"
     D02[/dTest2/]
-    click D02 "D01_dTest1.md" "Open this in a new tab" _blank
+    click D02 "D01_dTest1.md"
     D03[/dTest3/]
     click D03 "https://www.github.com" "This is a tooltip for a link"
     D04[/dTest4/]
@@ -63,3 +63,37 @@ flowchart TD
     D07-->P04
     P04-->D03
 ```
+
+```mermaid
+flowchart LR
+    A-->B1
+    B1-->C
+    C-->D
+    click A call callback() "Tooltip for a callback"
+    click B1 href "https://www.github.com" "This is a tooltip for a link"
+```
+
+<body>
+  <div class="mermaid">
+    flowchart LR
+        A-->B
+        B-->C
+        C-->D
+        click A callback "Tooltip"
+        click B "https://www.github.com" "This is a link"
+        click C call callback() "Tooltip"
+        click D href "https://www.github.com" "This is a link"
+  </div>
+
+  <script>
+    var callback = function () {
+        alert('A callback was triggered');
+    };
+    var config = {
+        startOnLoad: true,
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'cardinal' },
+        securityLevel:'loose'
+    };
+    mermaid.initialize(config);
+  </script>
+</body>
