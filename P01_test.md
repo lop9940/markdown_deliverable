@@ -89,3 +89,9 @@ flowchart TD
     mermaid.initialize(config);
   </script>
 </body>
+
+<blockquote><pre>
+<font color="red">
+赤色
+</font></pre>
+</blockquote>
