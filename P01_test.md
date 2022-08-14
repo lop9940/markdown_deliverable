@@ -41,7 +41,7 @@ flowchart TD
     P04([pTest4])
 
     D01[/dTest1/]
-    click D01 "../D01_dTest1.md" "Open this in a new tab" _blank
+    click D01 "D01_dTest1.md" "This is a tooltip for a link"
     D02[/dTest2/]
     click D02 "D01_dTest1.md" "Open this in a new tab" _blank
     D03[/dTest3/]
