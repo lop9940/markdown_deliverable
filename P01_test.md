@@ -63,37 +63,3 @@ flowchart TD
     D07-->P04
     P04-->D03
 ```
-
-```mermaid
-flowchart LR
-    A-->B1
-    B1-->C
-    C-->D
-    click A call callback() "Tooltip for a callback"
-    click B1 href "https://www.github.com" "This is a tooltip for a link"
-```
-
-<body>
-  <div class="mermaid">
-    flowchart LR
-        A-->B
-        B-->C
-        C-->D
-        click A callback "Tooltip"
-        click B "https://www.github.com" "This is a link"
-        click C call callback() "Tooltip"
-        click D href "https://www.github.com" "This is a link"
-  </div>
-
-  <script>
-    var callback = function () {
-        alert('A callback was triggered');
-    };
-    var config = {
-        startOnLoad: true,
-        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'cardinal' },
-        securityLevel:'loose'
-    };
-    mermaid.initialize(config);
-  </script>
-</body>
