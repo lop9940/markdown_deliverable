@@ -65,19 +65,33 @@ flowchart TD
 
 ```
 
-<body>
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});
-</script>
-
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+<div> 
+  <h1>Flowchart</h1>
   <div class="mermaid">
-    flowchart LR
-        A-->B
-        B-->C
-        C-->D
-        click A callback "Tooltip"
-        click B "https://www.github.com" "This is a link"
-        click C call callback() "Tooltip"
-        click D href "https://www.github.com" "This is a link"
+    graph TD
+    Start --> Stop 
+  </div> 
+  <h1>Sequence diagram</h1><div class="mermaid">
+    sequenceDiagram
+    participant John
+    participant Alice
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great 
   </div>
-</body>
+  <h1>Gantt</h1>
+  <div class="mermaid">
+   gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+
+  </div>
+</div>
+    
+     
