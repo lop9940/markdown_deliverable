@@ -43,7 +43,7 @@ flowchart TD
     D01[/dTest1/]
     click D01 "https://www.github.com" "This is a link"
     D02[/dTest2/]
-    click D02 "[/D01_dTest1.md](https://github.com/lop9940/markdown_deliverable/blob/add-link/D01_dTest1.md)"
+    click D02 "https://github.com/lop9940/markdown_deliverable/blob/add-link/D01_dTest1.md"
     D03[/dTest3/]
     click D03 "https://www.github.com" "This is a tooltip for a link"
     D04[/dTest4/]
