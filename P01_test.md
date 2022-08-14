@@ -76,5 +76,4 @@ flowchart TD
         click C call callback() "Tooltip"
         click D href "https://www.github.com" "This is a link"
   </div>
-
 </body>
