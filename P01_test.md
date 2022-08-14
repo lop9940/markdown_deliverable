@@ -29,9 +29,9 @@
 
 ## 1.3. PFD
 
-[このプロジェクトへのコントリビューションガイドライン](D01_dTest1.md)
+[このプロジェクトへのコントリビューションガイドライン](/D01_dTest1.md)
 
-[このプロジェクトへのコントリビューションガイドライン](D01_dTest1.md)
+[このプロジェクトへのコントリビューションガイドライン](/D01_dTest1.md)
 
 ```mermaid
 flowchart TD
@@ -43,7 +43,7 @@ flowchart TD
     D01[/dTest1/]
     click D01 "https://www.github.com" "This is a link"
     D02[/dTest2/]
-    click D02 "D01_dTest1.md"
+    click D02 "/D01_dTest1.md"
     D03[/dTest3/]
     click D03 "https://www.github.com" "This is a tooltip for a link"
     D04[/dTest4/]
@@ -62,4 +62,6 @@ flowchart TD
     P03-->D07
     D07-->P04
     P04-->D03
+
 ```
+
