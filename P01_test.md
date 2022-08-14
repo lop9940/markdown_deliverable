@@ -77,21 +77,4 @@ flowchart TD
         click D href "https://www.github.com" "This is a link"
   </div>
 
-  <script>
-    var callback = function () {
-        alert('A callback was triggered');
-    };
-    var config = {
-        startOnLoad: true,
-        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'cardinal' },
-        securityLevel:'loose'
-    };
-    mermaid.initialize(config);
-  </script>
 </body>
-
-<blockquote><pre>
-<font color="red">
-赤色
-</font></pre>
-</blockquote>
