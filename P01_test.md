@@ -93,5 +93,7 @@ flowchart TD
 
   </div>
 </div>
-    
-     
+
+body{background:#dadada;
+}
+svg{background:white}
