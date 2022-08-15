@@ -29,7 +29,7 @@
 
 ## 1.3. PFD
 
-[このプロジェクトへのコントリビューションガイドライン](D01_dTest1.md)
+[このプロジェクトへのコントリビューションガイドライン](/D01_dTest1.md)
 
 [このプロジェクトへのコントリビューションガイドライン](D01_dTest1.md)
 
@@ -41,10 +41,11 @@ flowchart TD
     P04([pTest4])
 
     D01[/dTest1/]
-    click D01 "../D01_dTest1.md" "Open this in a new tab" _blank
+    click D01 "D01_dTest1.md"
     D02[/dTest2/]
-    click D02 "D01_dTest1.md" "Open this in a new tab" _blank
+    click D02 "https://github.com/lop9940/markdown_deliverable/blob/add-link/D01_dTest1.md"
     D03[/dTest3/]
+    click D03 "https://www.github.com" "This is a tooltip for a link"
     D04[/dTest4/]
     D05[/dTest5/]
     D06[/dTest6/]
@@ -61,4 +62,5 @@ flowchart TD
     P03-->D07
     D07-->P04
     P04-->D03
+
 ```
