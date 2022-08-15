@@ -3,7 +3,6 @@ name: Action Sample
 on:
   push:
     branches: 
-      - master
       - add-github-actions-yaml
   workflow_dispatch:
 
