@@ -2,8 +2,6 @@ name: Action Sample
 
 on:
   push:
-    branches: 
-      - master
   workflow_dispatch:
 
 jobs:
