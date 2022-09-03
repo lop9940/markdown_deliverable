@@ -9,9 +9,9 @@ jobs:
   multi-repos:
     runs-on: ubuntu-latest
     steps:
+      - run: mkdir tools
       - name: Checkout
         uses: actions/checkout@v3
-        run: mkdir tools
         with:
           path: tools
       - name: Checkout another repo
