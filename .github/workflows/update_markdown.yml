@@ -6,7 +6,7 @@ on:
       - "feature/**"
 
 jobs:
-  multi-repos:
+  link_correction_and_check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
