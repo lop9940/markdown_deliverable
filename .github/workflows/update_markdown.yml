@@ -1,0 +1,33 @@
+name: update_markdown
+
+on:
+  push:
+    branches:
+      - "feature/**"
+
+jobs:
+  multi-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: main
+      - name: Checkout another repo
+        uses: actions/checkout@v3
+        with:
+          repository: lop9940/markdown_tools
+          path: tools
+      - run: |
+          pwd
+          ls -la
+      - name: Check the main repo
+        working-directory: main
+        run: |
+          pwd
+          ls -la
+      - name: Check the another repo
+        working-directory: tools
+        run: |
+          pwd
+          ls -la
