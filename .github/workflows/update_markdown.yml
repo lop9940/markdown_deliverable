@@ -37,7 +37,7 @@ jobs:
       - name: Run check_mermaid_link.py
         working-directory: main
         run: |
-          python ../update_markdown/update_markdown/check_mermaid_link.py
+          python ../tools/update_markdown/update_markdown/check_mermaid_link.py
       - name: Run Git
         working-directory: main
         run: |
